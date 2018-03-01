@@ -1,5 +1,8 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0"
+    "name": "React Native AWS Cognito Demo",
+    "slug": "rn-aws-cognito-demo",
+    "sdkVersion": "25.0.0",
+    "privacy": "public"
   }
 }
