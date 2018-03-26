@@ -1,25 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Amplify from 'aws-amplify';
-import awsConfig from './src/aws-exports';
+import { SwitchNavigator } from 'react-navigation';
+import Signin from './components/Signin/Signin';
 
-Amplify.configure(awsConfig);
+const MainNavigator = SwitchNavigator({
+  Signin: { screen: Signin },
+  // Signup: { screen: Signup },
+  // Profile: { screen: Profile },
+  // Confirmation: { screen: Confirmation },
+  // ForgotPassword: { screen: ForgotPassword },
+  initialRouteName: 'Login',
+});
 
-import { withAuthenticator } from 'aws-amplify-react-native';
-
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <MainNavigator/>
       </View>
     );
   }
 }
-
-export default withAuthenticator(App);
 
 const styles = StyleSheet.create({
   container: {
