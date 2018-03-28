@@ -2,10 +2,11 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SwitchNavigator } from 'react-navigation';
 import Signin from './components/Signin/Signin';
+import Signup from './components/Signup/Signup';
 
 const MainNavigator = SwitchNavigator({
   Signin: { screen: Signin },
-  // Signup: { screen: Signup },
+  Signup: { screen: Signup },
   // Profile: { screen: Profile },
   // Confirmation: { screen: Confirmation },
   // ForgotPassword: { screen: ForgotPassword },
