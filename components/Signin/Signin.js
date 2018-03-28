@@ -29,6 +29,7 @@ export default class Signin extends Component {
     Auth.signIn (this.state.email, this.state.password)
       .then(user => {this.props.navigation.navigate('Profile', user)})
       .catch(err => { this.setState({ errorMessage: err.message }) });
+    console.log(this.state);
   };
 
   render() {
@@ -82,7 +83,7 @@ export default class Signin extends Component {
               style={styles.signin_button}
             >
               <Text style={styles.signin_button_text}>
-                LOGIN
+                SIGNIN
               </Text>
             </TouchableOpacity>
           </View>

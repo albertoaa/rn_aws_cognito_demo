@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { SwitchNavigator } from 'react-navigation';
 import Signin from './components/Signin/Signin';
 
