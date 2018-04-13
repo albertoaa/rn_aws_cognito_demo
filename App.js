@@ -4,13 +4,14 @@ import { SwitchNavigator } from 'react-navigation';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
 import Confirmation from './components/Confirmation/Confirmation';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 
 const MainNavigator = SwitchNavigator({
   Signin: { screen: Signin },
   Signup: { screen: Signup },
   // Profile: { screen: Profile },
   Confirmation: { screen: Confirmation },
-  // ForgotPassword: { screen: ForgotPassword },
+  ForgotPassword: { screen: ForgotPassword },
   initialRouteName: 'Login',
 });
 
